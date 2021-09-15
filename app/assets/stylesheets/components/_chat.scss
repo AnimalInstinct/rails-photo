@@ -1,0 +1,104 @@
+.chat {
+  border: 1px solid $light-grey;
+  height: 100%;
+
+  &__contacts {
+    height: 100%;
+    border-right: 1px solid $light-grey;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  &__messages {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  &__column-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    background-color: $light-grey;
+    padding: 10px;
+    margin-bottom: 5px;
+    &__avatar {
+      img {
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      padding: 0 20px;
+    }
+  }
+
+  &__message {
+    display: flex;
+    padding: 10px 20px;
+    height: 70px;
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      &__username {
+        font-weight: 500;
+        margin-left: 10px;
+      }
+      &__text {
+        margin: 10px 0 0 10px;
+      }
+    }
+  }
+
+  &__action {
+    min-height: 65px;
+    &__form {
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+
+      &__input {
+        width: 100%;
+        border: 0;
+        padding: 20px;
+        width: 100%;
+        border-top: 1px solid $light-grey;
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &__button {
+        padding: 10px;
+        background: transparent;
+        border: none;
+        border-top: 1px solid $light-grey;
+        min-width: 85px;
+        cursor: pointer;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 40px;
+          width: 1px;
+          background-color: $light-grey;
+          margin:auto 0;
+        }
+        & i {
+          height: 100%;
+          width: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

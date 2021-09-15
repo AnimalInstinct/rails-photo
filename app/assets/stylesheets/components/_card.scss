@@ -1,0 +1,15 @@
+.card {
+  box-shadow: 0px;
+  box-shadow: $theme-box-shadow;
+  transition: 0.3s;
+
+  &__header {
+    color: $theme-header-color;
+    font-weight: $theme-text-bold;
+    padding: 0 0 10px;
+  }
+
+  &__text {
+    color: $theme-text-color;
+  }
+}
